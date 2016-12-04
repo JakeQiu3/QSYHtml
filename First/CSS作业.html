@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF_8">
+	<meta http_equiv="X_UA_Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="邱少依">
+	<meta name="keywords" content="Html CSS">
+	<meta name="descrispanion" content="七乐康iOS组邱少依的CSS作业">
+	<title>邱少依 CSS Homework</title>
+	<style type="text/css">
+		*{ /*设置html的总样式*/
+			margin: 0;
+			padding: 0;
+			background_color: white;
+		}
+		.header img{
+			position:absolute;
+			display: block;
+			width: 100%;
+			height: 25%;
+			border: none;
+			}
+		.backgroundCenter { /*统一设置backgroundName的总样式*/
+		   position:absolute;  /*相对父视图*/
+		   width:300px;  
+		   height:300px;  
+		   left:50%;  
+		   top:50%;  
+		   margin:-150px 0 0 -150px;
+		   background:green;    
+		}
+		.pointName {/*统一设置pointName的总样式*/
+				position: absolute;
+				width:10px;
+				height: 10px;
+				background-color: yellow;
+				border-radius:5px;
+				/*单独设置边框：border_top_right_radius:5px;
+				border_bottom_right_radius:5px;
+				border_bottom_left_radius:5px;
+				border_top_left_radius:5px;*/
+		}
+		/*设置左侧丿*/
+		.zero {
+			top:  2%;
+			left: 35%;
+		}
+		.first {
+			top:  7%;
+			left: 32%;
+		}
+		.second {
+			top:  12%;
+			left: 27%;
+		}
+		.third {
+			top:  17%;
+			left: 22%;
+		}
+		.fourth {
+			top:  22%;
+			left: 17%;
+		}
+		.fifth {
+			top:  27%;
+			left: 10%;
+		}
+		.sixth {
+			top:  30%;
+			left: 3%;
+		}
+		/*设置竖线*/
+		.seventh {
+			top:  25%;
+			left: 22%;
+		}
+		.eighth {
+			top:  32%;
+			left: 22%;
+		}
+		.ninth {
+			top:  39%;
+			left: 22%;
+		}
+		.tenth {
+			top:  46%;
+			left: 22%;
+		}
+		.eleventh {
+			top:  53%;
+			left: 22%;
+		}
+		.twelvth {
+			top:  60%;
+			left: 22%;
+		}
+		.thirteenth {
+			top:  67%;
+			left: 22%;
+		}
+		.fourteenth {
+			top:  74%;
+			left: 22%;
+		}
+		.fifteenth {
+			top:  81%;
+			left: 22%;
+		}
+		.sixteenth {
+			top:  88%;
+			left: 22%;
+		}
+
+        /*设置点*/
+		.seventeenth {
+			top:  13%;
+			left: 47%;
+		}
+		.eighteenth {
+			top:  16%;
+			left: 52%;
+		}
+		.ninteenth {
+			top:  20%;
+			left: 57%;
+		}
+
+       /*设置横线*/
+		.twentieth {
+			top:  25%;
+			left: 30%;
+		}
+		.twenty_first {
+			top:  25%;
+			left: 37%;
+		}
+		.twenty_second {
+			top:  25%;
+			left: 44%;
+		}
+		.twenty_third {
+			top:  25%;
+			left: 51%;
+		}
+		.twenty_fourth {
+			top:  25%;
+			left: 58%;
+		}
+		.twenty_fifth {
+			top:  25%;
+			left: 65%;
+		}
+		.twenty_sixth {
+			top:  25%;
+			left: 72%;
+		}
+		.twenty_seventh {
+			top:  25%;
+			left: 79%;
+		}
+		.twenty_eighth {
+			top:  25%;
+			left: 86%;
+		}
+		.twenty_ninth {
+			top:  25%;
+			left: 91%;
+		}
+
+		/*设置丿*/
+        .thirtieth {
+			top:  30%;
+			left: 55%;
+		}
+		.thirty_first {
+			top:  35%;
+			left: 50%;
+		}
+		.thirty_second {
+			top:  40%;
+			left: 45%;
+		}
+		.thirty_third {
+			top:  45%;
+			left: 40%;
+		}
+		.thirty_fourth {
+			top:  50%;
+			left: 35%;
+		}
+		.thirty_fifth {
+			top:  55%;
+			left: 30%;
+		}
+
+		/*设置竖线2*/
+		.thirty_sixth {
+			top:  45%;
+			left: 45%;
+		}
+		.thirty_seventh {
+			top:  52%;
+			left: 45%;
+		}
+		.thirty_eighth {
+			top:  59%;
+			left: 45%;
+		}
+		.thirty_ninth {
+			top:  66%;
+			left: 45%;
+		}
+		.fortieth {
+			top:  73%;
+			left: 45%;
+		}
+		.fourty_first {
+			top:  80%;
+			left: 45%;
+		}
+		.fourty_second {
+			top:  87%;
+			left: 45%;
+		}
+
+
+		/*设置钩*/
+		.fourty_third {
+			top:  82%;
+			left: 50%;
+		}
+		.fourty_fourth {
+			top:  77%;
+			left: 55%;
+		}
+
+		/*设置捺*/
+		.fourty_fifth {
+			top:  40%;
+			left: 53%;
+		}
+		.fourty_sixth {
+			top:  45%;
+			left: 57%;
+		}
+		.fourty_seventh {
+			top:  50%;
+			left: 61%;
+		}
+		.fourty_eighth {
+			top:  55%;
+			left: 65%;
+		}
+		.fourty_ninth {
+			top:  60%;
+			left: 69%;
+		}
+		.fiftieth {
+			top:  65%;
+			left: 73%;
+		}
+		.fifty_first {
+			top:  70%;
+			left: 77%;
+		}
+		.fifty_second {
+			top:  75%;
+			left: 81%;
+		}
+		.fifty_third {
+			top:  80%;
+			left: 85%;
+		}
+		.fifty_fourth {
+			top:  85%;
+			left: 89%;
+		}
+
+        /*设置丿*/
+		.fifty_fifth {
+			top:  52%;
+			left: 70%;
+		}
+		.fifty_sixth {
+			top:  47%;
+			left: 75%;
+		}
+		.fifty_seventh {
+			top:  42%;
+			left: 80%;
+		}
+
+
+
+		.footer img{
+			position:absolute;
+			display: block;
+			width: 100%;
+			top: 75%;
+			height: 25%;
+			border: none;
+			}
+	</style>
+
+</head>
+<body>
+	<div class="header">
+		<img src="http://img3.duitang.com/uploads/item/201508/11/20150811113519_Q52xC.gif">  <!__ http://s16.sinaimg.cn/mw690/4be5cbaftx6D1UuCMQDef&690 __>
+	</div>
+	<div class="backgroundCenter">
+		  <span class="pointName zero"></span>
+		  <span class="pointName first"></span>
+		  <span class="pointName second"></span>
+		  <span class="pointName third"></span>
+		  <span class="pointName fourth"></span>
+		  <span class="pointName fifth"></span>
+		  <span class="pointName sixth"></span>
+
+		  <span class="pointName seventh"></span>
+		  <span class="pointName eighth"></span>
+		  <span class="pointName ninth"></span>
+		  <span class="pointName tenth"></span>
+		  <span class="pointName eleventh"></span>
+		  <span class="pointName twelvth"></span>
+		  <span class="pointName thirteenth"></span>
+		  <span class="pointName fourteenth"></span>
+		  <span class="pointName fifteenth"></span>
+		  <span class="pointName sixteenth"></span>
+
+		  <span class="pointName seventeenth"></span>
+		  <span class="pointName eighteenth"></span>
+		  <span class="pointName ninteenth"></span>
+
+		  <span class="pointName twentieth"></span>
+		  <span class="pointName twenty_first"></span>
+		  <span class="pointName twenty_second"></span>
+		  <span class="pointName twenty_third"></span>
+		  <span class="pointName twenty_fourth"></span>
+		  <span class="pointName twenty_fifth"></span>
+		  <span class="pointName twenty_sixth"></span>
+		  <span class="pointName twenty_seventh"></span>
+		  <span class="pointName twenty_eighth"></span>
+		  <span class="pointName twenty_ninth"></span>
+
+
+		  <span class="pointName thirtieth"></span>
+		  <span class="pointName thirty_first"></span>
+		  <span class="pointName thirty_second"></span>
+		  <span class="pointName thirty_third"></span>
+		  <span class="pointName thirty_fourth"></span>
+		  <span class="pointName thirty_fifth"></span>
+
+		   <span class="pointName thirty_sixth"></span>
+		   <span class="pointName thirty_seventh"></span>
+		   <span class="pointName thirty_eighth"></span>
+		   <span class="pointName thirty_ninth"></span>
+		   <span class="pointName fortieth"></span>
+		   <span class="pointName fourty_first"></span>
+		   <span class="pointName fourty_second"></span>
+
+
+		   <span class="pointName fourty_third"></span>
+		   <span class="pointName fourty_fourth"></span>
+
+		   <span class="pointName fourty_fifth"></span>
+		   <span class="pointName fourty_sixth"></span>
+	       <span class="pointName fourty_seventh"></span>
+	       <span class="pointName fourty_eighth"></span>
+	       <span class="pointName fourty_ninth"></span>
+	       <span class="pointName fiftieth"></span>
+	       <span class="pointName fifty_first"></span>
+	       <span class="pointName fifty_second"></span>
+	       <span class="pointName fifty_third"></span>
+	       <span class="pointName fifty_fourth"></span>
+
+
+	       <span class="pointName fifty_fifth"></span>
+	       <span class="pointName fifty_sixth"></span>
+	       <span class="pointName fifty_seventh"></span>
+	</div>
+	<!-- <!<div class="footer">
+	<img src="http://img3.duitang.com/uploads/item/201508/11/20150811113519_Q52xC.gif">	
+	</div> -> -->
+</body>
+</html>

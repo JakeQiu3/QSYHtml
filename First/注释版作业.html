@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- 声明文档的解析类型(document.compatMode)，设置成CSS1Compat（标准模式：浏览器使用W3C的标准解析渲染页面）避免浏览器的怪异模式; 若未设置则默认是BackCompat（怪异模式： 浏览器按照自己的方式解析渲染页面，那么，在不同的浏览器就会显示不同的样式） -->
+<html>
+<head>
+<meta charset="utf-8"> <!-- meta为 元标签,位于head元素内部,该元素的content属性是必要属性，也就是字典中的key，可以设置想要的value值。 注：HTML5 中不支持 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title> <!-- 展示在Banner上的网页标题 -->
+<meta name="description" content="这是一个示例的demo">
+<meta name="keywords" content="关键字是html">
+<meta name="author" content="王盼盼">
+ <link href="" rel="stylesheet"> <!-- 链接一个外部样式表,如下：style,设置整个html的样式 -->
+
+<style type="text/css">
+	*{
+		margin: 0; /*设置该html到界面的4边的距离为0*/
+		padding: 1000;/*设置该html到界面的4边的距离为0*/
+	}
+	/*.clearfix::before,.clearfix::after{display:table;line-height:0;content:"";}
+	.clearfix::after{clear:both;}*/
+	.header img{ /*设置class header的样式*/
+		display: block;
+		width: 100%;
+		border: none;
+	}
+	.navBar{ /*统一设置class navBar的样式：webkit-box*/
+		display: -webkit-box;
+		display: box;
+	}
+	.navBar li{/*统一设置class navBar中的li标签元素的样式*/
+		-webkit-box-flex: 1;
+		box-flex: 1;
+		line-height: 20px;
+		font-size: 16px;
+		text-align: center;	
+		list-style: none;
+		padding: 20px 0;
+		background: green;
+	}
+	.navBar li:nth-child(2){ /*设置class navBar中第2个li标签元素的样式*/
+		-webkit-box-flex: 2;
+		box-flex: 2;
+		background: yellow;
+	}
+	.lists li{ /*统一设置class lists的样式*/
+		float: left;
+		width: 40%;
+		height: 200px;
+		background: red;
+		margin: 5%;
+		list-style: none;
+	}
+</style>
+</head>
+
+<body>
+<div class="header"> <!-- 加载第一个本地图片 -->
+	<img src="file:///Users/qiushaoyi/Desktop/banner.png">
+</div>
+
+<ul class="navBar"> <!-- 加载文本 -->
+	<li>导航条1</li>
+	<li>导航条2</li>
+	<li>导航条3</li>
+</ul>
+
+<div class="goodsList">
+	<ul class="lists clearfix">
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+</body>
+</html>

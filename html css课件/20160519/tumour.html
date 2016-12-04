@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<title>肿瘤科专题策划</title>
+	<style type="text/css">
+		*{ margin:0; padding:0; } 
+		li{list-style:none;}
+		img{width:100%;display: block;border:none;}
+		a{text-decoration:none;}
+		html{font-size:62.5%;font-family: "Tahoma","Arial","Roboto","Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC","sans-self";}
+		.clearfix:after{content:'.';clear:both;display:block;height:0;visibility:hidden;line-height:0;}
+		.clearfix{zoom:1;}
+		.container{padding-bottom:2.7%;background: #d5ebff;}
+		.drugTitle{display:block;width:100%;padding:2.8% 0;background-color:#41a6fe;color:#fefeff;font-size:0.26rem;text-align:center;}
+		.drugList{ overflow: hidden; padding: 0 0 0 1.4% ;box-sizing:border-box;}
+		.drugList li{ float:left; width:48.6%;background: #ffffff;margin-right:1.4%;color:#3a3a3a;}
+		.drugList .moreTumor{margin-bottom:1.6%;}
+		.drugDetail{padding:0 3%; box-sizing: border-box;}
+		.drugDetail p{ font-size: 0.26rem;  text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}		
+		.price{ font-size: 0.48rem; color:#fd0214;margin-bottom:0.12rem;}
+		.price span{font: 0.48rem 'Arial';  font-weight: bold}
+		.drugPrice{overflow: hidden;}
+		.addDrugstore{ float:left;margin:0.2rem 0 0.3rem 0;padding:0.08rem 0.14rem 0.1rem 0.01rem; font-size:0.24rem; color: #fff; position: relative; background: #fd0214; }
+		.is_active .addDrugstore{ background: #999999; }
+		.addDrugstore:after{ position: absolute; display: block; content:''; border-width: 0.08rem 0 0.08rem 0.09rem; border-style: solid; border-color: transparent transparent transparent #fff; right: 0.03rem; top: 33.3%;  }
+		.error_www{width:100%;background: rgba(141,141,141,0.9);border-radius: 50px;margin:0 auto;text-align: center;position: fixed;top: 50%; z-index: 10; ;font-size: 0.18rem;padding: 5% 0;  color: #FFFFFF;  padding: 5% 0;display:none;}
+		.error_www.active{display:block;}
+	</style>
+</head>
+<body>
+	<div class="error_www">网络出了点问题，请稍后再试！</div>
+	<div class="banner">
+		<img src="assets/images/banner.png" alt="">
+	</div>
+	<div class="container" id="container">
+		<span class="drugTitle">直击DNA，肿瘤细胞无处逃</span>
+		<ul class="drugList clearfix">
+			<li pid="37833">
+				<img src="assets/images/tumorDrug1.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[0].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[0].salePrice"></span></div>
+					<p>信谊 甲氨蝶呤片  16片</p>
+					<div class="drugPrice"><span class="addDrugstore">加入我的药房</span></div>
+				</div>
+			</li>
+			<li pid="2641">
+				<img src="assets/images/tumorDrug2.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[1].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[1].salePrice"></span></div>
+					<p>泰魁  复方环磷酰胺片 24片</p>
+					<div class="drugPrice"><span class="addDrugstore">加入我的药房</span>
+					</div>
+				</div>
+			</li>
+		</ul> 
+		<span class="drugTitle">增强免疫，抵抗肿瘤</span>
+		<ul class="drugList clearfix">
+			<li pid="19555">
+				<img src="assets/images/tumorDrug3.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[2].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[2].salePrice"></span></div>
+					<p>正大 平消胶囊  100粒</p>
+					<div class="drugPrice">
+						<span class="addDrugstore">加入我的药房</span>
+					</div>
+				</div>
+			</li>
+			<li pid="19421">
+				<img src="assets/images/tumorDrug4.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[3].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[3].salePrice"></span></div>
+					<p>芙露饮 匹多莫德口服液 6支</p>
+					<div class="drugPrice">
+						<span class="addDrugstore">加入我的药房</span>
+					</div>
+				</div>
+			</li>
+		</ul> 
+		<span class="drugTitle">保护乳腺，女人的健康卫士</span>
+		<ul class="drugList clearfix">
+			<li pid="4486">
+				<img src="assets/images/tumorDrug5.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[4].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[4].salePrice"></span></div>
+					<p>芙瑞  来曲唑片  10片</p>
+					<div class="drugPrice">
+						<span class="addDrugstore">加入我的药房</span>
+					</div>
+				</div>
+			</li>
+			<li pid="14756">
+				<img src="assets/images/tumorDrug6.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[5].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[5].salePrice"></span></div>
+					<p>艾达 阿那曲唑片 14片 </p>
+					<div class="drugPrice">
+						<span class="addDrugstore">加入我的药房</span>
+					</div>
+				</div>
+			</li>
+		</ul> 
+		<span class="drugTitle">让放化疗的伤害少一点</span>
+		<ul class="drugList clearfix">
+			<li pid="6837">
+				<img src="assets/images/tumorDrug7.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[6].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[6].salePrice"></span></div>
+					<p>汉方 十一味参芪胶囊  60粒</p>
+					<div class="drugPrice">
+						<span class="addDrugstore">加入我的药房</span>
+					</div>
+				</div>
+			</li>
+			<li pid="19751">
+				<img src="assets/images/tumorDrug8.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[7].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[7].salePrice"></span></div>
+					<p>郝其军 复方皂矾丸 72丸</p>
+					<div class="drugPrice">
+						<span class="addDrugstore">加入我的药房</span>
+					</div>
+				</div>
+			</li>
+		</ul> 
+		<span class="drugTitle">更多肿瘤治疗药</span>
+		<ul class="drugList clearfix">
+			<li pid="19385" class="moreTumor" style="margin-top:0;">
+				<img src="assets/images/tumorDrug9.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[8].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[8].salePrice"></span></div>
+					<p>安素 肠内营养粉剂 400g/罐</p>
+					<div class="drugPrice">
+						<span class="addDrugstore">加入我的药房</span>
+					</div>
+				</div>
+			</li>
+			<li pid="5843" class="moreTumor" style="margin-top:0;">
+				<img src="assets/images/tumorDrug10.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[9].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[9].salePrice"></span></div>
+					<p>九寨沟 西黄丸 2支</p>
+					<div class="drugPrice">
+						<span class="addDrugstore">加入我的药房</span>
+					</div>
+				</div>
+			</li>
+			<li pid="13784" class="moreTumor">
+				<img src="assets/images/tumorDrug11.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[10].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[10].salePrice"></span></div>
+					<p>信谊 硫唑嘌呤片 60粒</p>
+					<div class="drugPrice">
+						<span class="addDrugstore">加入我的药房</span>
+					</div>
+				</div>
+			</li>
+			<li pid="18307" class="moreTumor">
+				<img src="assets/images/tumorDrug12.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[11].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[11].salePrice"></span></div>
+					<p>易瑞沙 吉非替尼片 10片</p>
+					<div class="drugPrice">
+						<span class="addDrugstore">加入我的药房</span>
+					</div>
+				</div>
+			</li>
+			<li pid="17243" class="moreTumor">
+				<img src="assets/images/tumorDrug13.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[12].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[12].salePrice"></span></div>
+					<p>依尼舒 达沙替尼片 7片</p>
+					<div class="drugPrice">
+						<span class="addDrugstore">加入我的药房</span>
+					</div>
+				</div>
+			</li>
+			<li pid="687" class="moreTumor">
+				<img src="assets/images/tumorDrug14.png" alt=""/>
+				<div class="drugDetail" data-bind="attr:{'class':session().data[13].isAdded?'drugDetail is_active':'drugDetail'}" >
+					<div class="price">￥<span data-bind="text:session().data[13].salePrice"></span></div>
+					<p>威克 依托泊苷软胶囊  10粒</p>
+					<div class="drugPrice">
+						<span class="addDrugstore">加入我的药房</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
+<script src="../../../assets/js/util/WebViewJavascriptBridge.js" type="text/javascript" charset="utf-8" ></script>
+<script src="../../../assets/js/util/router.min.js?v=20160804" type="text/javascript" charset="utf-8" ></script>
+<script src="../../../assets/js/util/zepto.min.js" type="text/javascript" charset="utf-8" ></script>
+<script src="../../../engine_assets/js/util/knockout-3.4.0.min.js" type="text/javascript" charset="utf-8" ></script>
+<script src="../../../assets/js/util/simgloader.min.js" type="text/javascript" charset="utf-8" ></script>
+<script type="text/javascript">
+	//rem
+	document.documentElement.style.fontSize = document.documentElement.clientWidth/7.2+'px';
+	//惰性加载
+	window.SUtil.sImageLoader({'lazyLoad':true});
+	
+	$(function(){
+		window.setTimeout(function(){
+			//加载药品价格
+			var idStr = '';
+			$('.drugList li').each(function(){
+				idStr += $(this).attr('pid')+',';
+			});
+			idStr = idStr.substring(0,idStr.length-1);
+			Router.loadPriceKo(idStr,'#container',function(data){});
+			//点击图片进入详情页
+			$('.drugList img').on('tap',function(){
+		      	var oPid=$(this).parent().attr('pid');
+		      	if(oPid){
+		     		Router.toProductDetail(oPid);
+		     	};
+		    });
+			//点击加入我的药房
+			$('#container').on('tap','.drugDetail',function(){
+		    	var _this = $(this);
+		    	var drugId = $(this).parent().attr('pid');
+		    	
+		    	Router.addDrug(drugId,function(data){
+		    		if(data.code == 0){
+		    			_this.addClass('is_active');//点击加入变样式
+		    		}else if(data == 1){           //没网情况
+		    			$('.error_www').addClass('active');
+						setTimeout(function(){
+							$('.error_www').removeClass('active');
+						},2000);
+		    		}
+		    	});
+		    });
+		},500);
+
+	})
+
+</script>
+<!-- 专题百度统计代码 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?5c422921362cec7215eb160a13ae452f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>

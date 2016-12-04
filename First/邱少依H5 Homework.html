@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="邱少依">
+	<meta name="description" content="这是七乐康iOS组邱少依的CSS作业">
+	<meta name="keywords" content="Html">
+	<title>邱少</title>
+	<!-- <link rel="stylesheet" type="text/css" href=""> -->
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding:0;
+		}
+	.header img{
+				display: block;
+				width: 100%;
+				border: none;
+			}
+	.navBar{
+		display: -webkit-box;
+		display: box;
+	}
+	.navBar li{
+		-webkit-box-flex: 1;
+		box-flex: 1;
+		line-height: 20px;
+		font-size: 14px;
+		text-align: center;	
+		list-style: none;
+		padding: 20px 0;
+		background: green;
+	}
+	.navBar li:nth-child(2){
+		_webkit-box-flex:2;
+		box-flex: 2;
+		background: yellow;
+	}
+	.lists li{
+		float: left;
+		width: 40%;
+		height: 200px;
+		background: red;
+		text-align: center;
+		margin: 5%;
+		/*vertical-align:middle;*/
+		line-height:200px;
+		list-style: none;
+	}
+	.lists li:nth-child(1){
+		background: cyan;
+	}
+	.lists li:nth-child(2){
+		background: orange;
+	}
+	</style>
+}
+
+</head>
+<body>
+<div class="header">
+	<img src="file:///Users/qiushaoyi/Desktop/banner.png">
+</div>
+<ul class="navBar">
+	<li>邱少依1</li>
+	<li>邱少依2</li>
+	<li>邱少依3</li>
+</ul>
+<div class="goodList">
+	<ul class="lists clearfix">
+	<li>左青龙</li>
+	<li>右白虎</li>
+	</ul>
+</div>
+</body>
+</html>
