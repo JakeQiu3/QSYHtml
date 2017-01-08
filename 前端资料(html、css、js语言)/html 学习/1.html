@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>我就是标题</title>
+</head>
+<body>
+<br /> 
+<hr />
+<br />
+<h1>最大的标题</h1>
+<h2>我是次之标题</h2>
+
+<hr />
+<p><strong>我就是看看我是不是加粗的段落</strong></p>
+<p><em>我就是看我是不是斜了</em></p>
+<p><del>我就看看你删除没删除</del></p>
+<p><ins>我就看看文字有没有加下划线</ins></p>
+<font size="3" color="red">我就是优美的红色字体</font>
+<hr />
+ <!-- 本地文件的绝对路径：如上面的网页路径和本地的盘符 -->
+<img src="http://f.hiphotos.baidu.com/zhidao/pic/item/203fb80e7bec54e773121bcbbe389b504ec26a6c.jpg" title="图标悬停时显示的图片信息" alt="图片不显示就切换成" width="150" height="150" />
+<!-- 本地文件的相对路径：以当前的html文件为起点，按文件夹或文件逐层向下一级寻找路径：分为3种情况 同一文件夹、下级之后的文件夹、上一级文件夹 -->
+<img src="web标准.png">
+<img src="img/1.png"> 
+<img src="../web标准比喻.png">
+<img src="../../上2级文件夹的图片.png">
+<hr />
+<!-- 链接：超链接 -->
+<a href="跳转的目标" target="跳转目标的弹出方式" ><base href="https://www.google.com"> 这是超链接的说明,base标签可以统一设置：未进行href设置或者href无效或者为#或者为锚点id等的所有的为统一的一个base的链接</a>
+
+<br /> 
+<a href="#">暂时没有链接时，a的属性href设置为#就可以</a>
+<br />
+<a href="https://www.baidu.com" target="_blank">创建并跳转到百度一下的新页面</a>
+<br /> 
+<a href="https://www.baidu.com" target="_self" <base />>创建并直接在本页面跳转到百度一下</a>
+<br /> 
+<!-- 链接：锚点链接 -->
+<a href="#id名称">通过id名称快读跳转到对应的标签位置</a>
+<br />
+<a href="#4C">跳转到元素为id为4C的标签那儿</a>
+<br />
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<p id="4C">我就是id为4C的段落标签</p>
+<hr />
+
+<!-- 列表：ul，ol和dl -->
+<ul type="square">下面看一下无序列表属性type：disic默认、square和circle
+
+	<li>我是并列的无序列表1</li>
+	<li>我是并列的无序列表2</li>
+	<li>我是并列的无序列表3</li>
+</ul>
+
+<ol type="A" start="2">下面看一下无序列表属性type和start：默认的type是阿拉伯数字，start为1； type可为英文字母，区分大小写。
+	<li>我是有序列表1</li>
+	<li>我是有序列表2</li>
+	<li>我是有序列表3</li>
+</ol>
+
+<dl>
+	<dt>我是自定义的列表1的标题</dt>
+	<dd>自定义列表1的解释</dd>
+	<dd>自定义列表1的再次解释</dd>
+	<dt>我是自定义的列表2的标题</dt>
+	<dd>自定义列表2的解释</dd>
+	<dt>我是自定义的列表3的标题</dt>
+	<dd>自定义列表3的解释</dd>
+
+</dl>
+
+
+</body>
+</html>
+
