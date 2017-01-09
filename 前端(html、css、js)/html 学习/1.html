@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 标记meta的 属性:name（用于描述网页内容，对应content）；http- equiv（用于描述网页请求内容，对应content）;charset （字符集的属性：utf-8最常用，包含全世界所有国家需要用到的字符、gb2312 简单中文、GBK包含全部中文字符和繁体、BIG5 繁体中文） -->
+    <meta charset="utf-8">
+    <meta name="generator" content="说明生成工具如：Microsoft FrontPage 4.0">
+    <meta name="author" content="向搜索引擎说明你的网页的制作者：邱少依">
+    <meta name="keywords" content="向搜索引擎说明你的网页的关键词 如：html 学习 基础">
+    <meta name="description" content="告诉搜索引擎你的站点的主要内容：这是个人学习html的过程">
+    <meta name="robots" content="all|none|index|noindex|follow|nofollow">
+    <!-- all：文件将被检索，且页面上的链接可以被查询； none：文件将不被检索，且页面上的链接不可以被查询；index：文件将被检索；follow：页面上的链接可以被查询；noindex：文件将不被检索，但页面上的链接可以被查询； -->
+    <meta http-equiv="X_UA_Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html"; charset="gb_2313">
+	<meta http-equiv="refresh" content="5;url=http://www.w3school.com.cn">
+	<title>我就是标题</title>
+
+    <!-- 引用标签link：常用于引用css表和外部的图片 -->
+    <link rel="icon" href="1.icon">
+    <link rel="stylesheet" type="text/css" href="/a/other.css">
+	<!-- css的3种方式：link的方式、标签内style、header中统一的style -->
+	<link rel="stylesheet" type="text/css" href="/b/other.css">
+	<style type="text/css">
+		h1 {color: red}
+	</style>
+
+</head>
+<body>
+<br /> 
+<hr />
+<br />
+<h1>最大的标题</h1>
+<h2>我是次之标题</h2>
+
+<hr />
+<p><strong>我就是看看我是不是加粗的段落</strong></p>
+<p><em>我就是看我是不是斜了</em></p>
+<p><del>我就看看你删除没删除</del></p>
+<p><ins>我就看看文字有没有加下划线</ins></p>
+<font size="3" color="red">我就是优美的红色字体</font>
+<hr />
+ <!-- 本地文件的绝对路径：如上面的网页路径和本地的盘符 -->
+<img src="http://f.hiphotos.baidu.com/zhidao/pic/item/203fb80e7bec54e773121bcbbe389b504ec26a6c.jpg" title="图标悬停时显示的图片信息" alt="图片不显示就切换成" width="150" height="150" />
+<!-- 本地文件的相对路径：以当前的html文件为起点，按文件夹或文件逐层向下一级寻找路径：分为3种情况 同一文件夹、下级之后的文件夹、上一级文件夹 -->
+<img src="web标准.png">
+<img src="img/1.png"> 
+<img src="../web标准比喻.png">
+<img src="../../上2级文件夹的图片.png">
+<hr />
+<!-- 链接：超链接 -->
+<a href="跳转的目标" target="跳转目标的弹出方式" > <!--base标签说明如下 <base href="https://www.google.com">  -->这是超链接的说明,base标签可以统一设置：未进行href设置或者href无效或者为#或者为锚点id等的所有的为统一的一个base的链接</a>
+
+<br /> 
+<a href="#">暂时没有链接时，a的属性href设置为#就可以</a>
+<br />
+<a href="https://www.baidu.com" target="_blank">创建并跳转到百度一下的新页面</a>
+<br /> 
+<a href="https://www.baidu.com" target="_self" <base />>创建并直接在本页面跳转到百度一下</a>
+<br /> 
+<!-- 链接：锚点链接 -->
+<a href="#id名称">通过id名称快读跳转到对应的标签位置</a>
+<br />
+<a href="#4C">跳转到元素为id为4C的标签那儿</a>
+<a href="#5C">跳转到元素为id为5C的标签那儿</a>
+<br />
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<p id="4C">我就是id为4C的段落标签</p>
+<p id="5C">我就是id为5C的段落标签</p>
+<hr />
+
+<!-- 特殊符号 -->
+<p>1•*“<2><=</p>
+<hr />
+
+<!-- 列表：ul，ol和dl -->
+<ul type="square">下面看一下无序列表属性type：disic默认、square和circle
+
+	<li>我是并列的无序列表1</li>
+	<li>我是并列的无序列表2</li>
+	<li>我是并列的无序列表3</li>
+</ul>
+
+<ol type="A" start="2">下面看一下无序列表属性type和start：默认的type是阿拉伯数字，start为1； type可为英文字母，区分大小写。
+	<li>我是有序列表1</li>
+	<li>我是有序列表2</li>
+	<li>我是有序列表3</li>
+</ol>
+
+<dl>
+	<dt>我是自定义的列表1的标题</dt>
+	<dd>自定义列表1的解释</dd>
+	<dd>自定义列表1的再次解释</dd>
+	<dt>我是自定义的列表2的标题</dt>
+	<dd>自定义列表2的解释</dd>
+	<dt>我是自定义的列表3的标题</dt>
+	<dd>自定义列表3的解释</dd>
+
+</dl>
+<hr />
+
+<p style="color: red;font: 19">对，我就是表格：要用到3个标签：table表格，tr：表示表的行数，td表示每行的具体列单元格</p>
+table的标签的属性：border设置边框 默认为0 没有边框；cellspacing 设置单元格与单元格之间的距离；cellpadding设置文字与单元格之间的距离：
+<table border="30" cellspacing="20" cellpadding="5" width="" height:"" align="center" bgcolor="green">
+<caption>table的标题</caption>
+	<tr>
+		<td>我是第1列</td>
+		<td>我是第2列</td>
+		<td>我是第3列</td>
+	</tr>
+
+	<tr>
+		<td>我就是第2行就我自己，我任性</td>
+	</tr>
+
+	<tr>
+		<td>我就是第3行，我是老大</td>
+		<td>我就是第3行，我是老2</td>
+		<td>我就是第3行，我是老3</td>
+		<td>我就是第3行，我是老4</td>
+		<td>我就是第3行，我是老5</td>
+	</tr>
+</table>
+<hr />
+
+<table width="300" height:200 border="1">
+	<caption>学科</caption>
+	<tr>
+		<td>目录</td>
+		<td colspan="2" align="center">课程</td>
+	</tr>
+
+	<tr>
+		<td rowspan="2">Web</td>
+		<tr>
+			<td>html 基础教程</td>
+			<td>css 基础教程</td>
+		</tr>
+		<tr>
+			<td>js 基础教程</td>
+			<td>php 基础教程</td>
+		</tr>
+		
+		
+	</tr>
+</table>
+
+</body>
+</html>
+
