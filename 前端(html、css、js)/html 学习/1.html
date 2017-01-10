@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- 标记meta的 属性:name（用于描述网页内容，对应content）；http- equiv（用于描述网页请求内容，对应content）;charset （字符集的属性：utf-8最常用，包含全世界所有国家需要用到的字符、gb2312 简单中文、GBK包含全部中文字符和繁体、BIG5 繁体中文） -->
+    <!-- 标记meta的 属性:name（用于描述网页内容，对应content）；http- equiv（用于描述网页请求内容，对应content）;charset （字符集的属性：utf-8最常用，包含全世界所有国家需要用到的字符、gb2312 简体中文、GBK包含全部中文字符和繁体、BIG5 繁体中文） -->
     <meta charset="utf-8">
     <meta name="generator" content="说明生成工具如：Microsoft FrontPage 4.0">
     <meta name="author" content="向搜索引擎说明你的网页的制作者：邱少依">
     <meta name="keywords" content="向搜索引擎说明你的网页的关键词 如：html 学习 基础">
     <meta name="description" content="告诉搜索引擎你的站点的主要内容：这是个人学习html的过程">
     <meta name="robots" content="all|none|index|noindex|follow|nofollow">
-    <!-- all：文件将被检索，且页面上的链接可以被查询； none：文件将不被检索，且页面上的链接不可以被查询；index：文件将被检索；follow：页面上的链接可以被查询；noindex：文件将不被检索，但页面上的链接可以被查询； -->
+    <!-- all：文件将被检索，且页面上的链接可以被查询； none：文件将不被检索，且页面上的链接不可以被查询；index：文件将被检索；follow：页面上的链接可以被查询；noindex：文件将不被检索，但页面上的链接可以被查询；-->
     <meta http-equiv="X_UA_Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Type" content="text/html"; charset="gb_2313">
-	<meta http-equiv="refresh" content="5;url=http://www.w3school.com.cn">
+	<!--refresh 刷新，5秒一次，刷新成最新的url！ 考虑到使用，暂时不执行该代码： <meta http-equiv="refresh" content="5;url=http://www.w3school.com.cn"> -->
 	<title>我就是标题</title>
 
     <!-- 引用标签link：常用于引用css表和外部的图片 -->
     <link rel="icon" href="1.icon">
-    <link rel="stylesheet" type="text/css" href="/a/other.css">
-	<!-- css的3种方式：link的方式、标签内style、header中统一的style -->
-	<link rel="stylesheet" type="text/css" href="/b/other.css">
+<!--     <link rel="stylesheet" type="text/css" href="/a/other.css">
+ -->	<!-- css的3种方式：link的方式、标签内style、header中统一的style -->
+	<link rel="stylesheet" type="text/css" href="1.css">
 	<style type="text/css">
 		h1 {color: red}
 	</style>
@@ -44,7 +44,7 @@
 <img src="web标准.png">
 <img src="img/1.png"> 
 <img src="../web标准比喻.png">
-<img src="../../上2级文件夹的图片.png">
+<img src="../../上2级文件夹的图片.png" alt="无法显示" title="其实并没有放任何一张图片" alt="jjjj" >
 <hr />
 <!-- 链接：超链接 -->
 <a href="跳转的目标" target="跳转目标的弹出方式" > <!--base标签说明如下 <base href="https://www.google.com">  -->这是超链接的说明,base标签可以统一设置：未进行href设置或者href无效或者为#或者为锚点id等的所有的为统一的一个base的链接</a>
@@ -98,10 +98,10 @@
 </dl>
 <hr />
 
-<p style="color: red;font: 19">对，我就是表格：要用到3个标签：table表格，tr：表示表的行数，td表示每行的具体列单元格</p>
+<p style="color: red;font: 19">对，我就是一个基本的表格：要用到3个标签：table表格，tr：表示表的行，td表示每行的列，具体的单元格，th和td类似，只不过是格式化的标题</p>
 table的标签的属性：border设置边框 默认为0 没有边框；cellspacing 设置单元格与单元格之间的距离；cellpadding设置文字与单元格之间的距离：
 <table border="30" cellspacing="20" cellpadding="5" width="" height:"" align="center" bgcolor="green">
-<caption>table的标题</caption>
+<caption><h3>table的标题</h3></caption>
 	<tr>
 		<td>我是第1列</td>
 		<td>我是第2列</td>
@@ -120,29 +120,106 @@ table的标签的属性：border设置边框 默认为0 没有边框；cellspaci
 		<td>我就是第3行，我是老5</td>
 	</tr>
 </table>
+<br />
+<br />
 <hr />
 
+<p style="color: red;font: 19">对，我还是表格：caption表示表的居中显示的标题, th表示加粗的表头；thead：用于定义表格的页眉；tfoot：用于定义表格的页脚；tbody用于定义表格的主体</p>
 <table width="300" height:200 border="1">
 	<caption>学科</caption>
 	<tr>
-		<td>目录</td>
-		<td colspan="2" align="center">课程</td>
+		<th>目录</th>
+		<th colspan="2" align="center">课程</th>
 	</tr>
 
 	<tr>
-		<td rowspan="2">Web</td>
-		<tr>
-			<td>html 基础教程</td>
-			<td>css 基础教程</td>
-		</tr>
+		<th rowspan="2" align="center">Web</th>
+		<td>html 基础教程</td>
+		<td>css 基础教程</td>
 		<tr>
 			<td>js 基础教程</td>
 			<td>php 基础教程</td>
 		</tr>
-		
-		
 	</tr>
+    
 </table>
+<br />
+
+<table>
+	<thead>我就是表的页眉信息</thead>
+    <tbody>我就是定义表眉和表尾的body</tbody>
+    <tfoot>我就是页脚的信息</tfoot>
+</table>
+<hr />
+
+<p><h1> 表单的世界 </h1>就是和服务器交互标签:url本质上是 <ins>统一的资源定位符</ins> 如 https://www.baidu.com</p>
+<form name="qsy_form_name" action="https://www.baidu.com" method="get/post" style="color: red"> 
+我是表单，我要发送请求了。。。
+</form>
+<hr />
+
+
+<p>终于到了交互输入的地方了：type类型有很多种：text、url、email、password、radio、checkbox、button、submit、reset、image、hidden、file； name自己定义该控件的名称，value表示 自定义默认输入的文本值，readonly：值为readonly，disabled:值为disabled,checked:值为checked ,maxlength最大输入的整数，图片为src</p>
+<input type="text" name="我是输入文本的控件" value="我是输入框的默认占位符号" checked="checked" maxlength="10">
+<input type="image" name="我就是图片" src="img/作业2.png" style="width: 80" height="40">
+<input type="password" name="我是密码">
+<input type="url" name="判断网址">
+<input type="email" name="邮件">
+<input type="date" name="我就是日期">
+<input type="time" name="我是时间">
+<input type="number" name="只能输入时间">
+<br />
+<textarea cols="每行中的字符数，相当于宽度，表示列数,如3" rows="显示的行数，相当于高度，表示列数,如6"> 
+ 如果需要输入大量的信息，就需要用到textarea标记，cols 相当于宽度，rows相当于高度。
+</textarea>
+<br />
+<!-- size表示为选择器某列可视的行数； multiple表示支持多选；selected表示默认被选中的项-->
+<select size="5" multiple="multiple">
+	<option>请选择1</option>
+	<option >北京</option>
+	<option>上海</option>
+	<option>广州</option>
+	<option selected="selected">永城</option>
+	<option>深圳</option>
+	<option>南京</option>
+</select>
+<select >
+	<option>请选择2</option>
+	<option >北京</option>
+	<option>上海</option>
+	<option>广州</option>
+	<option selected="selected">永城</option>
+	<option>深圳</option>
+	<option>南京</option>
+</select>
+<select class="thirdSelect">
+	<option>请选择3</option>
+	<option >北京</option>
+	<option selected="selected">上海</option>
+	<option>广州</option>
+	<option >永城</option>
+	<option>深圳</option>
+	<option>南京</option>
+</select>
+<br />
+
+<fieldset>
+	<legend>我就是定义标题</legend>
+</fieldset>
+<br />
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
