@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 设置head的子元素 -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA_Comptatoble" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Type" content=""text/html;charset=gb2312">
+	<meta http-equiv="Content-Language" content="zh-cn">
+
+	<meta name="author" content="邱少依">
+	<meta name="description" content="这是我的html">
+  <meta name="keywords" content="HTML">
+<!-- 设置html的标题 -->
+  <title>1</title>
+	<title>标签来描述网页的语言。网页上你看到的各种内容都有对应的标签来定义。</title>
+	<title>标签=元素，元素的内容是开始标签与结束标签之间的内容</title>
+
+<!-- style的3种设置方式：1、链接外部表，进行格式化； 2、内部的style来设置某个元素 3、内联样式：具体给某个元素在开标签中单独设置sytle -->
+  <link rel="stylesheet" type="text/css" href="../html/csstest1.css">
+
+	<style type="text/css">
+	h1 {color: red}
+	p  {color: blue}
+	body {background-color: white}
+  </style>
+</head>
+<!-- body的background属性可以设置该body的背景，如：<body background="76.jpg"> gif 和 jpg 文件均可用作 HTML 背景。如果图像小于页面，图像会进行重复 -->
+<body>
+<!-- 元素:标题和段落-->
+  <hr />
+	<h1 style="color: green">我就是标题</h1>
+	<h2>this is a heading</h2>
+	<h3>this is  a heading </h3>
+	<h4>this is  a heading </h4>
+	<h5>this  heading </h5>
+	<h6>我还是标题</h6>
+	<p>My First paragraph</p>
+	<p>this is<br /> another <br />paragraph <br />with line breaks<br /></p>
+	<p>this is  three paragraph</p>
+  <hr />
+  <!-- 超链接 -->
+  <a href="http://wwww.google.com"> this is google 超文本引用（hypertext reference）的超链接！</a>
+  <br /> 
+  <br />
+  <a href="https://www.baidu.com" style="text-decoration: none;color: red">这是一个百度的链接，不信点点看！ </a>
+  <p><a href="2.html">文本作为链接</a>是一个指向本网站中的一个页面的链接。</p>
+  <br />
+  <br />
+  <p>图像来作链接，target属性创建新的网页如：<a href="2.html" target="_blank"><img src="1.gif" border="0"></a></p>
+  <br />
+  <br />
+  <a href="#C4"><h2>我是Chapter 1：查看 Chapter 4 <br />This chapter explains ba bla bla</h2></a>
+  <h2>Chapter 2 <br />This chapter explains ba bla bla</h2>
+  <h3>Chapter 3 <br />This chapter explains ba bla bla</h2>
+  <h4> <a name="C4"> Chapter 4 <br />This chapter explains ba bla bla </a> </h4>
+  <!-- 跳出框架用 target的top属性 -->
+	<a href="/index.html"
+	target="_top">请点击这里，跳出当前框架！</a>
+  <br />
+  <br />
+  <!-- 发邮件：注意url code -->
+    <a href="mailto:webmaster@example.com?cc=someoneelse@microsoft.com&bcc=andsomeoneelse2@microsoft.com&subject=Hello 邱少一%20again&body=You%20are%20invited%20to%20a%20big%20summer%20party!">点击就能发送邮件了哦</a>
+  <br />
+  <hr />
+  <br />
+  <br />
+	<!-- 图像 -->
+    <img src="12.jpg" width="104" height="40" />
+    <br />
+    <img src="123.png">
+    <br />
+    <img src="test/123.png" width="400" height="80" />
+    <br />
+    <img src="http://img5.imgtn.bdimg.com/it/u=385819379,838548798&fm=21&gp=0.jpg" align="left,bottom" />
+    
+  <!-- 空元素/空标签 -->
+    <p>     <!-- 空元素，空标签 : 没有内容的 HTML 元素，只包含属性，没有闭标签。空元素在开始标签中进行关闭 -->
+    <p />
+    <br>
+    <br />  <!-- 描述换行的 元素，属于单标签。其实关闭空元素等单标签的最正确方法是本身 这一行的写法 -->
+	  <!-- <hr>  -->
+	  <hr />  <!-- 描述 水平线 的元素，属于单标签 -->  
+
+<!-- 块级元素：通过加class和id -->
+	<div class="news" id="12234" style="color: #00FF00">
+	<h3>This is a 块级元素</h3>
+  <p>This is a paragraph.</p>
+	</div>
+  <p> <span>内部的小块</span> 内部的另一部分小块</p> <!-- 定义行内的小块或区域 -->
+<hr />
+
+<!-- 属性 -->
+    <h1 align="center">这个align是对齐方式的属性</h1>
+    <a href="#" style="text-decoration: none">属性style的天下开始了：   开标签中可以给元素加 属性 href 描述链接地址 </a>
+    <h2 class="标题类" id="12345" style="background:规定元素的行内样式 red" title=""></h2>
+<!-- 属性之样式 -->
+    <h1 style="background-color: PowderBlue">Look ！ Styles and colors </h1>
+    <p style="text-align: center;font-family: verdana;color: red;background-color: green">this text is Verdana and red</p>
+    <p style="font-family: times;color: green">This text is in Times and green</p>
+    <p style="font-size:30px">This text is 30 pixels high</p>
+
+<!-- 格式化的元素：1文本，不同的标签描述不同的字体 -->
+   <hr />
+   <strong>文本的格式化->this text is strong：描述加重语气</strong>
+   <b />
+   <big>this text is big：描述大号粗体 </big>
+   <br />
+   <em>this text is emphasized：描述着重</em>
+   <br />
+   <i>this text is italic：描述着斜体</i>
+   <br />
+   <small>This text is small：描述着小号体</small>
+   <br />
+   <p>我就是要看下标<sub>subscript：描述下标 </sub></p>
+   <br />
+   <p>我就是要看上标<sup>superscript：描述上标</sup></p>
+   <p>一打有 <del>二十</del> <ins>十二</ins>件。大多数浏览器会改写为删除文本和下划线文本，一些老式的浏览器会把删除文本和下划线文本显示为普通文本</p> 
+   <hr />
+
+ <!-- 格式化的元素：2“计算机输出”的标签：不同的“计算机输出”标签的显示效果：
+ <code>定义计算机代码文本
+ <kbd>	定义键盘文本
+ <samp>	定义计算机代码示例
+ <var>	定义变量
+ <pre>	定义预格式化文本 -->
+   <code>
+   <p>预格式和计算机相关的格式：使用 pre标签对空行和空格进行控制：描述预格式的文本</p>
+   <pre>
+   	var person = {
+   	firstName:"Bill",
+        lastName:"Gates",
+        age:50,
+        eyeColor:"blue"
+   	}
+   </pre>
+   Computer code：定义计算机代码 </code>
+   <br />
+   <kbd>Keyboard input:定义键盘码</kbd>
+   <br />
+   <tt>Teletype text:定义打字机代码。</tt>
+   <br />
+   <samp> Sample text:定义计算机代码样本</samp>
+   <br />
+   <p><var>定义变量: 如 E = mc<sup>2</sup></var></p>
+   <hr />
+
+ <!-- 格式化的元素：3引用、引用和术语定义
+ <abbr>	定义缩写或首字母缩略语。
+ <address>	定义文档作者或拥有者的联系信息。
+ <bdo>	定义文本方向。
+ <blockquote>	定义从其他来源引用的节。
+ <dfn>	定义项目或缩略词的定义。
+ <q>	定义短的行内引用。
+ <acronym> 定义首字母缩写
+ <cite>	定义著作的标het题。 -->
+ <p>引用地址和术语开始了</p>
+ <address> 定义地址 written by <a href="mailto:webmaster@example.com">Donald Duck</a>Visit us at:
+ Example.com Box 564,Disneyland USA</address>
+	<br/>
+	<abbr title="World Health Organization">WHOetc.缩写和首字母缩写</abbr>
+	<br/>
+	<acronym title="World Wide We">WWW：定义首字母缩写</acronym>
+	<p>在某些浏览器中，当你把鼠标移到缩略词上时，title可用于展示表达的完整版本。</p>
+	<p>仅对于 IE 5 中的 acronym 元素有效。</p>
+	<p>对于 Netscape 6.2 中的 abbr 和 acronym 元素都有效。</p>
+	<br/>
+	<bdo dir="rtl">定义文字方向，文字变成从右到左的方向：Here is some Hebrew text</bdo>
+	<br/>
+	<p>如果您的浏览器支持 bi-directional override (bdo)，下一行会从右向左输出 (rtl)；</p>
+	<br/>
+	<p>我的引文：<q>这是短引用</q></p>
+	<p>以下内容引用自 WWF 的网站：</p>
+	<blockquote> <a href="http://www.worldwildlife.org/who/index.html">这是长的引用。五十年来，WWF 一直致力于保护自然界的未来。
+	世界领先的环保组织，WWF 工作于 100 个国家，
+	并得到美国一百二十万会员及全球近五百万会员的支持</a></blockquote>
+	<p> <cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+	<p> <dfn><abbr title="World Health Organization">WHO</abbr></dfn>成立于 1948 年</p>
+  <hr />
+
+  <p>到了表格的时代</p>
+  <h4>1列</h4>
+  <table border="1">
+  <tr>
+    <td>100</td>
+  </tr>    
+  </table>
+
+  <h4>1行3列</h4>
+  <table border="1">
+    <tr>
+      <td>100</td>
+      <td>200</td>
+      <td>300</td>
+    </tr>
+  </table>
+
+  <h4>1行3列</h4>
+  <table border="2">
+    <tr>
+      <td>100</td>
+      <td>200</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>400</td>
+      <td>500</td>
+      <td>600</td>
+    </tr>
+  </table>
+
+
+
+</body>
+</html>
