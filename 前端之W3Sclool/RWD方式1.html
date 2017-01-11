@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+	<title>RWD1使用之自己创建css来适应</title>
+	<style type="text/css">
+		.city {
+			/*float这个属性中，若是left(right)就是从相对父标签的左侧边界开始，依次为相对并列控件的left(right)*/
+			float: right;
+			margin: 5px;
+			padding: 15px;
+			width: 300px;
+			height: 300px;
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+		<h1>邱少一</h1>
+		<h2>这是响应式Web设计：可变尺寸传递网页；对于平板和移动设备是必需的</h2>
+		<br />
+		<div class="city">
+			<h2>London</h2>
+			<p>London is the capital city of England.</p>
+			<p>It is the most populous city in the United Kingdom,
+			   with a metropolitan area of over 13 million inhabitants.</p>
+		</div>
+
+		<div class="city">
+			<h2>Paris</h2>
+			<p>Paris is the capital and most populous city of France.</p>
+		</div>
+
+		<div class="city">
+			<h2>Tokyo</h2>
+			<p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+			and the most populous metropolitan area in the world.</p>
+		</div>
+</body>
+</html>
