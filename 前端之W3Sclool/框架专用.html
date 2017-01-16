@@ -1,11 +1,36 @@
 
 <!DOCTYPE html>
 <html>
+<!-- 框架：每个框架可以理解成一个html，frame标签来描述；不能将 <body></body> 标签与 <frameset></frameset> 标签同时使用 -->
 
-<frameset cols="25%,50%,25%" rows="50%,30%,20%">
-<frame src="test/frame_a.html" noresize="noresize">我就是测一下a</frame> 
-<frame src="test/frame_b.html" noresize="noresize">我就是测一下b</frame> 
-<frame src="test/frame_c.html" noresize="noresize">我就是测一下c</frame> 
-
+<!-- 1、测试frame基本使用，框架的2种样式：垂直框架：只设置cols；水平框架：只设置rows如rows="50%,30%,20%"   -->
+<!-- <frameset rows="20%,50%,30%">
+<frame src="test/frame_a.html" noresize="noresize"></frame> 
+<frame src="test/frame_b.html" noresize="noresize"></frame> 
+<frameset cols="30%,30%,40%">
+	<frame src="test/frame_b.html"></frame>
+	<frame src="test/frame_c.html"></frame>
+	<frame src="test/frame_d.html#C9"></frame>
 </frameset>
+<noframes><body>您的浏览器无法处理框架!</body></noframes>
+</frameset> -->
+
+<!-- 2、测试导航的使用：其中name的value为showframe：表示设置该frame的名称，可通过target获取;其中第二个src是默认的打开内容，可不填 -->
+<!-- <frameset cols="180,*">
+	<frame src="test/frame_e.html"></frame>
+	<frame src="test/frame_d.html" name="showframe"></frame>
+</frameset> -->
+
+<!-- 3、测试iframe的使用：可以直接嵌套到body中，描述网页内显示的网页 -->
+<body>
+	<iframe src="1.gif" frameborder="0" width="300" height="200"></iframe>
+	<br /><br />
+	<iframe src="http://www.baidu.com" frameborder="30" width="1000" height="360"></iframe>
+	<br /><br />
+	<iframe src="" frameborder="100" width="1000" height="360" name="iframe_a"></iframe>
+	<a href="http://www.w3school.com.cn" target="iframe_a">点击此处,可以跳转到W3School.com.cn</a>
+	<hr />
+	<h3>注：一些老的浏览器不支持iframe,故可能导致设置的iframe看不见</h3>
+</body>
+
 </html>
