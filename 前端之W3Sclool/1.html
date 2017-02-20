@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <!-- 设置head的子元素：meta元数据，不会显示在页面上，但是对于机器是可读的 -->
@@ -11,15 +12,20 @@
 	<meta name="description" content="这是我的html">
     <meta name="keywords" content="HTML">
     <meta name="viewport" content="width = device-width,user-scalable = no">
+    <!-- <meta http-equiv="Refresh" content="3;url=http://www.w3school.com.cn" /> <!-- 页面延时后重定向 --> -->
 <!-- 设置html的标题 -->
     <title>1</title>
 	<title>标签来描述网页的语言。网页上你看到的各种内容都有对应的标签来定义。</title>
 	<title>标签=元素，元素的内容是开始标签与结束标签之间的内容</title>
-	<!-- base标签描述 页面上的所有链接规定默认地址或默认目标 -->
-    <base href="http://www.w3school.com.cn" />
+	<!-- base标签描述的优先级：页面上的所有链接规定默认地址或默认目标；target为_blank表示为新建一个空白网页-->
+    <base href="http://www.w3school.com.cn" target="_blank" />
 <!-- style的3种设置方式：1、链接外部表，进行格式化； 2、内部的style来设置某个元素 3、内联样式：具体给某个元素在开标签中单独设置sytle -->
 	<!-- link 定义当前文档和外部资源的关系 -->
     <link rel="stylesheet" type="text/css" href="css/1.css">
+
+    <script type="text/javascript">
+    	document.write("写在header里面的文本内容")
+    </script>
  <!--style定义文档的样式信息 -->
     <style type="text/css">
 	h1 {color: red}
@@ -395,11 +401,17 @@
 <script type="text/javascript">
 	document.write("<h1> Hello world</h1>")
 </script>
+
 <noscript>Sorry ,your browser does not support JavaScript!</noscript>
-<p>不支持 JavaScript 的浏览器,将显示 noscript 元素中的文本。</p>
+<p>适配 不支持 JavaScript 的浏览器, 将显示为 noscript 元素中的文本。</p>
 <br /><hr />
 
-
+<h2>字体实例: 防止某些字符被认为是标签而做的异常情况处理</h2>
+<p>&#174  &pound &lt  然后查看结果</p>
+<hr />
+<h2>Url的语法格式介绍:scheme://host.domain:port/path/filename；url经过url编码后才可以成为因特网传输的格式</h2>
+<p>scheme 常见因特网服务类型：http(超文本协议)、 https（信息交换安全的加密协议）、 ftp（文件上传和下载的传输协议）、 file（本地文件） </p>
+<hr />
 
 
 
