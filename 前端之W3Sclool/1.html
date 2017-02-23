@@ -413,20 +413,89 @@
 <p>scheme 常见因特网服务类型：http(超文本协议)、 https（信息交换安全的加密协议）、 ftp（文件上传和下载的传输协议）、 file（本地文件） </p>
 <hr />
 
-<form>
+<h1>表单form输入框input和多行输入textarea；选择菜单select和option等</h1>
+<form action="www.baidu.com" method="POST" target="_blank" accept-charset="utf-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate="">
+  <fieldset> <!-- 表单 -->
+  <legend>Personal information</legend>
   First name:<br />
-  <input type="text" name="firstName:Bill" /> <!-- type: radio选择、text文本输入和submit提交 -->
+  <input type="text" name="firstName:Bill" value="默认的John" readonly size="90" maxlength="10" /> <!-- type: radio选择、text文本输入和submit提交 -->
   <br />
   Last name:<br>
-  <input type="radio" name="lastName:Gates" />
+  <input type="radio" name="lastName:Gates" disabled />
+  <br />
+  <input type="password" name="123456789" />
+  <br />
+  <input type="checkbox" name="vehicle" value="Vehicle">
+  I have a bike
   <br />
   默认是20字符的宽
   <br />
+
   <input type="submit" name="Submit" />
+  </fieldset>
+</form>
+<br />
+
+<form action="2.html">
+  <select name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+  </select>
+  <br />
+</form>
+
+ <textarea name="message" rows="10" cols="30">the cat was playing in the garden
+  </textarea>
+<button type="button" onclick="alert('hello World')">点我</button>
+
+<form action="www.baidu.com">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer"></option>
+    <option value="Firefox"></option>
+    <option value="Chrome"></option>
+    <option value="Opera"></option>
+    <option value="Safari"></option>
+  </datalist>
+  <br />
+  <input type="number" name="Number">
+  <br />
+  <input type="submit" name="Submit">
+  <br />
+   Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"><br>
+  <br />
+  <input type="range" name="points" min="0" max="10">
+  <br />
+  Birthday (month and year):
+  <input type="month" name="bdaymonth">
+  <br />
+  Select a time:
+  <input type="time" name="usr_time">
+  <br />
+  Select a week:
+  <input type="week" name="week_year">
+  <br />
+  <input type="datetime" name="bdaytime">
+  <br />
+  <input type="datetime-local" name="bdaytime">
+  <br />
+  <input type="email" name="email">
+  <br />
+  <input type="search" name="googlesearch">
+  <br />
+  Telephone:
+  <input type="tel" name="usrtel">
+  <br />
+  Add your homepage:
+  <input type="url" name="homepage">
+  <br />
 </form>
 <hr />
-
-
 
 
 </body>
